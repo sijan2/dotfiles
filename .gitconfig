@@ -11,7 +11,7 @@
 [commit]
 	gpgSign = true
 [core]
-	excludesfile = /Users/sijanmainali/.gitignore_global
+	excludesfile = ~/.gitignore_global
 [gpg]
 	program = gpg
 [pull]
