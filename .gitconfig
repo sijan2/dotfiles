@@ -1,0 +1,19 @@
+[user]
+	name = Sijan Mainali
+	email = sijanmainali2@gmail.com
+	signingkey = 32EC1EAC7B9BFD1E
+[alias]
+  lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+[init]
+	defaultBranch = main
+[color]
+	ui = auto
+[commit]
+	gpgSign = true
+[core]
+	excludesfile = /Users/sijanmainali/.gitignore_global
+[gpg]
+	program = gpg
+[pull]
+	rebase = true
+	ff = only
