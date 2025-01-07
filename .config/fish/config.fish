@@ -15,7 +15,7 @@ set -Ux BROWSER "/Applications/Arc.app/Contents/MacOS/Arc"
 # Android SDK Paths
 set -gx ANDROID_HOME "$HOME/Library/Android/sdk"
 set -gx ANDROID_NDK "$ANDROID_HOME/ndk/"(ls -1 "$ANDROID_HOME/ndk" | sort -V | tail -n 1)
-set -x PATH $ANDROID_HOME/emulator $ANDROID_HOME/tools $ANDROID_HOME/tools/bin $ANDROID_HOME/platform-tools $PATH
+set -x PATH $ANDROID_HOME/emulator $ANDROID_HOME/tools $ANDROID_HOME/tools/bin $ANDROID_HOME/platform-tools $HOME/.pub-cache/bin $PATH
 
 # PNPM Configuration
 set -gx PNPM_HOME "$HOME/Library/pnpm"
@@ -27,7 +27,7 @@ end
 set -x GPG_TTY (tty)
 
 # OpenAI API Key (Consider storing this securely)
-set -gx OPENAI_API_KEY "sk-<your-api-key>"
+set -gx OPENAI_API_KEY "sk-nevergonnagiveyouupnevergonnaletyoudown"
 
 # Fish User Paths
 set -Ux fish_user_paths "/Applications/Android Studio.app/Contents/MacOS" $fish_user_paths
@@ -81,6 +81,7 @@ alias config="code ~/.config/fish/config.fish"
 alias reload="source ~/.config/fish/config.fish"
 alias cat='bat --style header --style snip --style changes --style header'
 alias edit="code (fzf --preview 'bat --color=always {}')"
+#alias nvim="cowsay skill issue"
 alias n="nvim"
 alias pn="pnpm"
 alias python="python3"

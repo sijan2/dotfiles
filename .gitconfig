@@ -12,6 +12,7 @@
 	gpgSign = true
 [core]
 	excludesfile = ~/.gitignore_global
+	editor = code --wait
 [gpg]
 	program = gpg
 [pull]
